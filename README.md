@@ -52,25 +52,25 @@ cd Spring-Boot-Microservice
 cd eureka-server
 mvn spring-boot:run
 
-### 3️⃣ Start the Config Server
+#### 3️⃣ Start the Config Server
 ```sh
 cd config-server
 mvn spring-boot:run
 
-### 4️⃣ Start the API Gateway
+#### 4️⃣ Start the API Gateway
 cd api-gateway
 mvn spring-boot:run
 
-### 5️⃣ Start the Microservices (Example: User Service)
+#### 5️⃣ Start the Microservices (Example: User Service)
 '''sh
 cd user-service
 mvn spring-boot:run
 
-### 6️⃣ Start Zipkin Server (Optional - Requires Docker)
+#### 6️⃣ Start Zipkin Server (Optional - Requires Docker)
 '''sh
 docker run -d -p 9411:9411 openzipkin/zipkin
 
-### 7️⃣ Access Microservices:
+#### 7️⃣ Access Microservices:
 Eureka Dashboard → http://localhost:8761
 API Gateway → http://localhost:8080
 Spring Boot Admin → http://localhost:9090
